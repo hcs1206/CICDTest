@@ -11,14 +11,15 @@
 	<groupId>com.redbeans</groupId>
 	<artifactId>CICDTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>CICDTest</name>
-	<description>Demo project for Spring Boot</description>
+	<description>CICDTest</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 
-	<dependencies>
+		<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -45,6 +46,17 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
+		<!-- jsp 설정 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
